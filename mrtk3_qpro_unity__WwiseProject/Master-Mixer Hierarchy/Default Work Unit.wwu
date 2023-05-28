@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{DA02FCB2-AFD5-461E-9DD7-DD48BDE058BA}" SchemaVersion="110">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{DA02FCB2-AFD5-461E-9DD7-DD48BDE058BA}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{19896108-D3E2-4E69-9C79-63E41D28BE18}" WorkUnitID="{5FDCB09A-37BE-4EE7-B61A-2472336DE4C9}"/>
+						</Reference>
+						<Reference Name="Effect0">
+							<Custom>
+								<Effect Name="Meter (Custom)" ID="{08CA0B03-88B4-4E21-A85B-85988E8275FA}" ShortID="430682849" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3"/>
+							</Custom>
+						</Reference>
+					</ReferenceList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

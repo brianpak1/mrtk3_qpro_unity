@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CEC3D724-91BE-4B44-8087-EA54D41AA7AB}" SchemaVersion="110">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{CEC3D724-91BE-4B44-8087-EA54D41AA7AB}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="event_playbeat" ID="{A7A03EF3-37B0-4EBD-95D0-5B3B8890AEEF}">
+					<ChildrenList>
+						<Action Name="" ID="{52A36F39-178F-4D8B-8780-C66BC408FDA5}" ShortID="48565296">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="tuamie-loop-1" ID="{D9EB93B0-332A-4EC7-8531-F91603B87D32}" WorkUnitID="{12C16B96-5EB0-402B-BB0C-281BFCB15822}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="event_playbeat2" ID="{63C84581-FBA3-420D-8143-363B1F202CBC}">
+					<ChildrenList>
+						<Action Name="" ID="{FE21E79E-F97E-4694-A811-3C0D8A43D05B}" ShortID="626897577">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="bugseed-clip1" ID="{431ACAA9-9373-4158-A8AF-6F5E28BF2D1D}" WorkUnitID="{12C16B96-5EB0-402B-BB0C-281BFCB15822}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="event_playbeat3" ID="{922EDD5B-7ACD-4F41-9030-1E775648C292}">
+					<ChildrenList>
+						<Action Name="" ID="{0FCCF7C2-1CD9-46D4-AAB3-77E52480DA16}" ShortID="263482260">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="djh-turntablelab-loop1" ID="{1B963ABE-AD0B-4078-9558-9F663CF079FB}" WorkUnitID="{12C16B96-5EB0-402B-BB0C-281BFCB15822}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	665020644	event_playbeat			\Default Work Unit\event_playbeat	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	162173126	tuamie-loop-1	C:\Users\fudwi\Documents\unity\Unity Projects\qpro_passthrough_mrtk3\qpro_passthrough_mrtk3_WwiseProject\.cache\Mac\SFX\tuamie-loop-1_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\tuamie-loop-1		1946012
+
