@@ -17,6 +17,7 @@ using Meta.WitAi.Data;
 using Meta.WitAi.Events;
 using Meta.WitAi.Interfaces;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 namespace Meta.WitAi
 {
@@ -157,18 +158,24 @@ namespace Meta.WitAi
             SetMicDelegates(true);
 
             _dynamicEntityProviders = GetComponents<IDynamicEntitiesProvider>();
+
+            SceneManager.sceneLoaded += OnSceneLoaded;
         }
+
         // Remove mic delegates
         protected void OnDisable()
         {
             AudioBufferEvents e = AudioBuffer.Instance?.Events;
             SetMicDelegates(false);
+
+            SceneManager.sceneLoaded -= OnSceneLoaded;
         }
-        // On scene refresh
-        protected virtual void OnLevelWasLoaded(int level)
+
+        private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
         {
             SetMicDelegates(true);
         }
+
         // Toggle audio events
         private AudioBuffer _buffer;
         private bool _bufferDelegates = false;
