@@ -7,20 +7,18 @@
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-6</Value>
-							</ValueList>
-						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
 							<Custom>
-								<Attenuation Name="Attenuation (Custom)" ID="{5AAF408B-A669-48AE-9206-E282A8C5590A}" ShortID="390016704">
+								<Attenuation Name="Attenuation (Custom)" ID="{6183AEDF-A9BE-4396-BB22-E28C42797913}" ShortID="381401405">
+									<PropertyList>
+										<Property Name="RadiusMax" Type="Real64" Value="2"/>
+									</PropertyList>
 									<CurveUsageInfoList>
 										<VolumeDryUsage>
 											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-												<Curve Name="VolumeDry" ID="{DF0D967D-7D6A-419B-B656-89764841A6BB}">
+												<Curve Name="VolumeDry" ID="{E5624684-E06A-46D7-8B06-477D10444B41}">
 													<PropertyList>
 														<Property Name="Flags" Type="int32" Value="3"/>
 													</PropertyList>
@@ -31,7 +29,7 @@
 															<Flags>5</Flags>
 														</Point>
 														<Point>
-															<XPos>100</XPos>
+															<XPos>2</XPos>
 															<YPos>-200</YPos>
 															<Flags>37</Flags>
 														</Point>
@@ -112,6 +110,20 @@
 								<MediaID ID="162173126"/>
 							</MediaIDList>
 						</AudioFileSource>
+						<AudioFileSource Name="tuamie-full loop" ID="{4A6D260E-91CF-4E1A-9C22-BBE68FB32CD0}">
+							<Language>SFX</Language>
+							<AudioFile>tuamie-full loop.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="289897637"/>
+							</MediaIDList>
+						</AudioFileSource>
+						<AudioFileSource Name="ark-twitchbeat-clip 1" ID="{43234D04-CE0E-4C03-B2E6-B8369F0EE012}">
+							<Language>SFX</Language>
+							<AudioFile>ark-twitchbeat-clip 1.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="531142865"/>
+							</MediaIDList>
+						</AudioFileSource>
 					</ChildrenList>
 					<ObjectLists>
 						<ObjectList Name="RTPC">
@@ -134,7 +146,7 @@
 														<PointList>
 															<Point>
 																<XPos>0</XPos>
-																<YPos>60</YPos>
+																<YPos>49</YPos>
 																<Flags>5</Flags>
 															</Point>
 															<Point>
@@ -188,7 +200,7 @@
 						</ObjectList>
 					</ObjectLists>
 					<ActiveSourceList>
-						<ActiveSource Name="tuamie-loop-1" ID="{7639FE7B-959F-4619-9640-29C60F1C532F}" Platform="Linked"/>
+						<ActiveSource Name="ark-twitchbeat-clip 1" ID="{43234D04-CE0E-4C03-B2E6-B8369F0EE012}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="bugseed-clip1" ID="{431ACAA9-9373-4158-A8AF-6F5E28BF2D1D}" ShortID="82720400">
