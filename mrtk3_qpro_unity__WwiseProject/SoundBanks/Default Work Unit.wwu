@@ -6,6 +6,7 @@
 				<SoundBank Name="soundbank_1" ID="{14860BB6-A21A-4CBD-8B25-BC012E05B42C}">
 					<ObjectInclusionList>
 						<ObjectRef Name="event_playbeat2" ID="{63C84581-FBA3-420D-8143-363B1F202CBC}" WorkUnitID="{CEC3D724-91BE-4B44-8087-EA54D41AA7AB}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="event_playbeat4" ID="{DC671C65-DAF4-4E68-8314-900B9196B807}" WorkUnitID="{CEC3D724-91BE-4B44-8087-EA54D41AA7AB}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="event_playbeat" ID="{A7A03EF3-37B0-4EBD-95D0-5B3B8890AEEF}" WorkUnitID="{CEC3D724-91BE-4B44-8087-EA54D41AA7AB}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="event_playbeat3" ID="{922EDD5B-7ACD-4F41-9030-1E775648C292}" WorkUnitID="{CEC3D724-91BE-4B44-8087-EA54D41AA7AB}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

@@ -36,6 +36,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="event_playbeat4" ID="{DC671C65-DAF4-4E68-8314-900B9196B807}">
+					<ChildrenList>
+						<Action Name="" ID="{DBE45AE4-9FE4-4C0F-BDCD-61F15F01D08F}" ShortID="413143696">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="erykah badu- fall in love-loop" ID="{9DC5ACC4-D000-4DD3-8E00-6332EC3657CC}" WorkUnitID="{12C16B96-5EB0-402B-BB0C-281BFCB15822}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

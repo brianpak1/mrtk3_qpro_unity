@@ -4,6 +4,7 @@
 		<WorkUnit Name="Default Work Unit" ID="{61452B44-EB00-4689-A695-CBFED9B90F32}" PersistMode="Standalone">
 			<ChildrenList>
 				<GameParameter Name="handmenu_open" ID="{2F2EFD07-6E2E-48E3-9537-DCD6846A80D2}"/>
+				<GameParameter Name="MasterVolume" ID="{E3EF4960-080D-443F-B6B9-FA5C7F16476B}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

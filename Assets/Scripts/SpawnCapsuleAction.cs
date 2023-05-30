@@ -11,7 +11,7 @@ public class SpawnCapsuleAction : MonoBehaviour
     private GameObject handMenu;
     public float transitionDuration = 1f;  // adjust this value to your preference
 
-public Transform LastSpawnedCapsuleTransform { get; private set; }
+    public Transform LastSpawnedCapsuleTransform { get; private set; }
 
     private bool wasHandMenuActive = false;
     private float targetRTPCValue = 100f;
