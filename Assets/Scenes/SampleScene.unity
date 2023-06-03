@@ -1288,12 +1288,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 1469e06c55558a343b704c8c94009499, type: 2}
+      objectReference: {fileID: 2100000, guid: b0b0cd8f767a3f34384866cbf226b83b, type: 2}
     - target: {fileID: 6879154239194480191, guid: 1fe9ae375f1107a4c8f8a2fd6f3ba959,
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1008060561697206567, guid: 5357df73468672d4794f1197cecf8193,
+      objectReference: {fileID: -645592108707704995, guid: 5357df73468672d4794f1197cecf8193,
         type: 3}
     - target: {fileID: 7322803053810144989, guid: 1fe9ae375f1107a4c8f8a2fd6f3ba959,
         type: 3}
@@ -1490,7 +1490,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300001, guid: 1dd706bb85d8aef4e83a6229dbd62c36,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: ced2eb0868cb2ac438d79e1ade7cb542, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2f48fbeb4a203274e8762112ae2dfbe6, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1653,7 +1653,7 @@ MonoBehaviour:
   wwiseEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 7bb59eb2fff39784a9a493a792b5deeb,
+    WwiseObjectReference: {fileID: 11400000, guid: b19b1dda9a666284298f108f47b25477,
       type: 2}
   handMenuOpenRTPC:
     idInternal: 0

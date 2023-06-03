@@ -8,7 +8,7 @@
 						<Action Name="" ID="{52A36F39-178F-4D8B-8780-C66BC408FDA5}" ShortID="48565296">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="tuamie-loop-1" ID="{D9EB93B0-332A-4EC7-8531-F91603B87D32}" WorkUnitID="{12C16B96-5EB0-402B-BB0C-281BFCB15822}"/>
+									<ObjectRef Name="ark-twitch beat" ID="{D9EB93B0-332A-4EC7-8531-F91603B87D32}" WorkUnitID="{12C16B96-5EB0-402B-BB0C-281BFCB15822}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -30,7 +30,7 @@
 						<Action Name="" ID="{0FCCF7C2-1CD9-46D4-AAB3-77E52480DA16}" ShortID="263482260">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="djh-turntablelab-loop1" ID="{1B963ABE-AD0B-4078-9558-9F663CF079FB}" WorkUnitID="{12C16B96-5EB0-402B-BB0C-281BFCB15822}"/>
+									<ObjectRef Name="aerate- quartz" ID="{1B963ABE-AD0B-4078-9558-9F663CF079FB}" WorkUnitID="{12C16B96-5EB0-402B-BB0C-281BFCB15822}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

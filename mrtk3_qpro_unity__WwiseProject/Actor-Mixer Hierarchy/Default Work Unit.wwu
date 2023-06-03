@@ -3,7 +3,7 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{12C16B96-5EB0-402B-BB0C-281BFCB15822}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="tuamie-loop-1" ID="{D9EB93B0-332A-4EC7-8531-F91603B87D32}" ShortID="944412064">
+				<Sound Name="ark-twitch beat" ID="{D9EB93B0-332A-4EC7-8531-F91603B87D32}" ShortID="944412064">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
@@ -317,7 +317,7 @@
 						<ActiveSource Name="bugseed-clip1" ID="{7F1ED0A8-B999-4595-8B37-8917A6CA4FAC}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="djh-turntablelab-loop1" ID="{1B963ABE-AD0B-4078-9558-9F663CF079FB}" ShortID="257942836">
+				<Sound Name="aerate- quartz" ID="{1B963ABE-AD0B-4078-9558-9F663CF079FB}" ShortID="257942836">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
@@ -409,6 +409,127 @@
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{27E13D5C-1FCE-4A71-BBCF-4774C26A575F}"/>
 						</Reference>
+						<Reference Name="Effect0">
+							<Custom CreatedFrom="{1969D30F-C165-45C0-B290-DE3ED07A7AA3}">
+								<Effect Name="Bathroom1 (Custom)" ID="{3972A46D-03E2-40DB-87F8-6D075AD762CA}" ShortID="241077426" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+									<PropertyList>
+										<Property Name="HFRatio" Type="Real32" Value="4.5"/>
+										<Property Name="NumberOfDelays" Type="int32" Value="12"/>
+										<Property Name="ReverbTime" Type="Real32" Value="1"/>
+										<Property Name="WetLevel" Type="Real32" Value="-20"/>
+									</PropertyList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{4FF16376-40BB-4B94-8901-AB693D33DD5A}" ShortID="91468373">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="DryLevel"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="handmenu_open" ID="{2F2EFD07-6E2E-48E3-9537-DCD6846A80D2}" WorkUnitID="{61452B44-EB00-4689-A695-CBFED9B90F32}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{2A445B33-2D85-4032-A1B3-7A800B08D51B}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>96.3</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>96.3</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{60263BA4-9267-41EF-8C82-464AE44F8584}" ShortID="153335123">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="WetLevel"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="handmenu_open" ID="{2F2EFD07-6E2E-48E3-9537-DCD6846A80D2}" WorkUnitID="{61452B44-EB00-4689-A695-CBFED9B90F32}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{B3B7BEF2-56EE-4121-9DC0-DFD76084496C}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>2.42476</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>-96.3</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{6896D071-C302-48D6-B252-371ED011E7C2}" ShortID="1063004762">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="ReverbTime"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="handmenu_open" ID="{2F2EFD07-6E2E-48E3-9537-DCD6846A80D2}" WorkUnitID="{61452B44-EB00-4689-A695-CBFED9B90F32}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{38D105F5-858C-492A-BC5B-6A81F353D761}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>1.57417</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0.1</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</Effect>
+							</Custom>
+						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DA02FCB2-AFD5-461E-9DD7-DD48BDE058BA}"/>
 						</Reference>
@@ -419,6 +540,13 @@
 							<AudioFile>djh-turntablelab-loop1.wav</AudioFile>
 							<MediaIDList>
 								<MediaID ID="980605870"/>
+							</MediaIDList>
+						</AudioFileSource>
+						<AudioFileSource Name="aerate-quartz -clip1" ID="{23EB2AF7-1508-467D-A5B2-D545F3AFA6A6}">
+							<Language>SFX</Language>
+							<AudioFile>aerate-quartz -clip1.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="648849742"/>
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
@@ -443,7 +571,7 @@
 														<PointList>
 															<Point>
 																<XPos>0</XPos>
-																<YPos>69</YPos>
+																<YPos>40</YPos>
 																<Flags>5</Flags>
 																<SegmentShape>Log1</SegmentShape>
 															</Point>
@@ -479,8 +607,118 @@
 														<PointList>
 															<Point>
 																<XPos>0</XPos>
-																<YPos>-200</YPos>
+																<YPos>-0.5891</YPos>
 																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-29.686</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{4B8C452B-2A9F-4390-B36C-24BBB242C81D}" ShortID="515302682">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Highpass"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="handmenu_open" ID="{2F2EFD07-6E2E-48E3-9537-DCD6846A80D2}" WorkUnitID="{61452B44-EB00-4689-A695-CBFED9B90F32}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{627E9870-7A05-4B00-BDBB-13B8730A9A49}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>55</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{360E9033-3CE1-42E2-8219-6863CC674D95}" ShortID="314190647">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="handmenu_open" ID="{2F2EFD07-6E2E-48E3-9537-DCD6846A80D2}" WorkUnitID="{61452B44-EB00-4689-A695-CBFED9B90F32}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{52C0A8C8-B5B1-4B1D-9B99-79DC41CAA0EC}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-2</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{98021E77-1FAF-4527-8283-59EF38F0BB12}" ShortID="483455658">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Pitch"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="handmenu_open" ID="{2F2EFD07-6E2E-48E3-9537-DCD6846A80D2}" WorkUnitID="{61452B44-EB00-4689-A695-CBFED9B90F32}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{F6D09A2F-AB3B-4CEE-BFC1-7DBC3D30C79A}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>48.97314</XPos>
+																<YPos>-2800</YPos>
+																<Flags>0</Flags>
 															</Point>
 															<Point>
 																<XPos>100</XPos>
@@ -498,7 +736,7 @@
 						</ObjectList>
 					</ObjectLists>
 					<ActiveSourceList>
-						<ActiveSource Name="djh-turntablelab-loop1" ID="{3E7419A7-20C5-46DA-A274-E1430F810428}" Platform="Linked"/>
+						<ActiveSource Name="aerate-quartz -clip1" ID="{23EB2AF7-1508-467D-A5B2-D545F3AFA6A6}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="aso-sunsets-loop" ID="{752C8455-DF7F-4A5E-88FA-5683B9E235B5}" ShortID="769083521">

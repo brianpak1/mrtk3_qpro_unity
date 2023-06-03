@@ -1528,6 +1528,7 @@
 								</Effect>
 							</ChildrenList>
 						</Folder>
+						<Effect Name="New_RoomVerb" ID="{CC826C96-0A87-4919-A307-5AA8E7FE1268}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3"/>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Flanger" ID="{7DAC593F-E45C-42D6-9C69-23A9DEC47B9D}" ShortID="177523455">
