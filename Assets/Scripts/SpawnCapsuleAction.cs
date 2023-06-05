@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class SpawnCapsuleAction : MonoBehaviour
@@ -6,17 +7,26 @@ public class SpawnCapsuleAction : MonoBehaviour
     public Transform spawnTransform;
     public Vector3 spawnOffset;
     public AK.Wwise.Event wwiseEvent;
+    public uint lastPlayingID;
     public AK.Wwise.RTPC handMenuOpenRTPC;
+    public AK.Wwise.RTPC handMenuCloseRTPC;
     [SerializeField]
     private GameObject handMenu;
-    public float transitionDuration = 1f;  // adjust this value to your preference
+    public float transitionDuration = 1f;
 
     public Transform LastSpawnedCapsuleTransform { get; private set; }
 
     private bool wasHandMenuActive = false;
-    private float targetRTPCValue = 100f;
-    private float currentRTPCValue = 100f;
-    private AK.Wwise.Event lastEvent;  // new field to store the last playing sound event
+    private float targetOpenRTPCValue = 100f;
+    private float currentOpenRTPCValue = 100f;
+    private float currentCloseRTPCValue = 0f;
+    private AK.Wwise.Event lastEvent;
+    private Coroutine pitchShiftCoroutine = null;
+
+    void Start()
+    {
+        handMenuCloseRTPC.SetGlobalValue(0f);
+    }
 
     void Update()
     {
@@ -25,19 +35,38 @@ public class SpawnCapsuleAction : MonoBehaviour
         if (isHandMenuActive != wasHandMenuActive)
         {
             wasHandMenuActive = isHandMenuActive;
-            targetRTPCValue = isHandMenuActive ? 0f : 100f;
+            targetOpenRTPCValue = isHandMenuActive ? 0f : 100f;
+
+            // If hand menu is opening
+            if (!isHandMenuActive && pitchShiftCoroutine == null)
+            {
+                pitchShiftCoroutine = StartCoroutine(HandlePitchShift());
+            }
         }
 
-        // smoothly transition RTPC value
-        currentRTPCValue = Mathf.Lerp(currentRTPCValue, targetRTPCValue, Time.deltaTime / transitionDuration);
-        handMenuOpenRTPC.SetGlobalValue(currentRTPCValue);
+        currentOpenRTPCValue = Mathf.Lerp(currentOpenRTPCValue, targetOpenRTPCValue, Time.deltaTime / transitionDuration);
+        handMenuOpenRTPC.SetGlobalValue(currentOpenRTPCValue);
+    }
+
+    IEnumerator HandlePitchShift()
+    {
+        float startTime = Time.time;
+
+        while (Time.time - startTime < transitionDuration)
+        {
+            currentCloseRTPCValue = Mathf.Lerp(0, 100, (Time.time - startTime) / transitionDuration);
+            handMenuCloseRTPC.SetGlobalValue(currentCloseRTPCValue);
+            yield return null;
+        }
+
+        handMenuCloseRTPC.SetGlobalValue(0f);
+        pitchShiftCoroutine = null;
     }
 
     public void Execute()
     {
         if (capsulePrefab != null && spawnTransform != null)
         {
-            // Stop the last sound event, if one exists
             if (lastEvent != null)
             {
                 lastEvent.Stop(LastSpawnedCapsuleTransform.gameObject);
@@ -47,8 +76,10 @@ public class SpawnCapsuleAction : MonoBehaviour
             LastSpawnedCapsuleTransform = capsuleInstance.transform;
 
             wwiseEvent.Post(capsuleInstance);
-            lastEvent = wwiseEvent;  // store the sound event for later
+            lastEvent = wwiseEvent;
+            lastPlayingID = wwiseEvent.Post(capsuleInstance);
+            lastEvent = wwiseEvent;
+            //TogglePlayPause.isPlaying = true; // Add this line
         }
     }
-
 }

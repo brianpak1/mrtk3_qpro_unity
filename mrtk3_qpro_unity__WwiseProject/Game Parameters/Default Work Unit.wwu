@@ -12,6 +12,8 @@
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="MasterVolume" ID="{E3EF4960-080D-443F-B6B9-FA5C7F16476B}"/>
+				<GameParameter Name="handmenu_close" ID="{8DE3B35E-E51F-405C-AD3D-D1883CC232B1}"/>
+				<GameParameter Name="pausing" ID="{9C5D6484-2FB9-4F6F-96CF-DC1E62F280FA}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

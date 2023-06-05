@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: b2fc02dad5af1e469dd7dd48bde058ba
     GuidInternal: 
-    m_lastTime: -8585158715745272494
+    m_lastTime: -8585157683630347993
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 8ccc52afde038c4899e0cb67232665b1
     GuidInternal: 
-    m_lastTime: -8585162738061633872
+    m_lastTime: -8585156879871191970
     List:
     - name: soundbank_1
       guid: b60b86141aa2bd4c8b25bc012e05b42c
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 24d7c3cebe91444b8087ea54d41aa7ab
     GuidInternal: 
-    m_lastTime: -8585158728130428423
+    m_lastTime: -8585156929453477756
     List:
     - name: event_playbeat
       guid: f33ea0a7b037bd4e95d05b3b8890aeef
@@ -176,8 +176,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 442b456100eb8946a695cbfed9b90f32
     GuidInternal: 
-    m_lastTime: -8585158638316154423
+    m_lastTime: -8585156917432451958
     List:
+    - name: handmenu_close
+      guid: 5eb3e38d1fe55c40ad3dd1883cc232b1
+      id: 4203434986
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 442b456100eb8946a695cbfed9b90f32
+      - ElementName: handmenu_close
+        ObjectType: 13
+        guid: 5eb3e38d1fe55c40ad3dd1883cc232b1
+      Path: Game Parameters\Default Work Unit\handmenu_close
     - name: handmenu_open
       guid: 07fd2e2f2e6ee3489537dcd6846a80d2
       id: 1272632974
@@ -206,6 +220,20 @@ MonoBehaviour:
         ObjectType: 13
         guid: 6049efe30d083f44b6b9fa5c7f16476b
       Path: Game Parameters\Default Work Unit\MasterVolume
+    - name: pausing
+      guid: 84645d9cb92f6f4f96cfdc1e62f280fa
+      id: 3856304344
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 442b456100eb8946a695cbfed9b90f32
+      - ElementName: pausing
+        ObjectType: 13
+        guid: 84645d9cb92f6f4f96cfdc1e62f280fa
+      Path: Game Parameters\Default Work Unit\pausing
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -249,8 +277,8 @@ MonoBehaviour:
     m_lastTime: -8585163456962887280
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
-  AutoSyncSelection: 0
+  ExpandedWaapiItemIds: 0500000006000000070000000f000000100000001500000016000000
+  AutoSyncSelection: 1
   autoPopulateEnabled: 1
   currentDataSource: 0
   CurrentPluginConfig: 

@@ -317,7 +317,7 @@
 						<ActiveSource Name="bugseed-clip1" ID="{7F1ED0A8-B999-4595-8B37-8917A6CA4FAC}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="aerate- quartz" ID="{1B963ABE-AD0B-4078-9558-9F663CF079FB}" ShortID="257942836">
+				<Sound Name="aerate" ID="{1B963ABE-AD0B-4078-9558-9F663CF079FB}" ShortID="257942836">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
@@ -326,6 +326,9 @@
 						<Reference Name="Attenuation">
 							<Custom>
 								<Attenuation Name="Attenuation (Custom)" ID="{F4434B58-FDF7-4FE3-A528-71E83C2EA12E}" ShortID="609271346">
+									<PropertyList>
+										<Property Name="RadiusMax" Type="Real64" Value="1"/>
+									</PropertyList>
 									<CurveUsageInfoList>
 										<VolumeDryUsage>
 											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
@@ -338,9 +341,10 @@
 															<XPos>0</XPos>
 															<YPos>0</YPos>
 															<Flags>5</Flags>
+															<SegmentShape>Exp2</SegmentShape>
 														</Point>
 														<Point>
-															<XPos>100</XPos>
+															<XPos>1</XPos>
 															<YPos>-200</YPos>
 															<Flags>37</Flags>
 														</Point>
@@ -549,6 +553,20 @@
 								<MediaID ID="648849742"/>
 							</MediaIDList>
 						</AudioFileSource>
+						<AudioFileSource Name="nujabes-aruarian dance" ID="{6F4A736C-F45F-4EFE-ACEE-0ECC357B3182}">
+							<Language>SFX</Language>
+							<AudioFile>nujabes-aruarian dance.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="841236091"/>
+							</MediaIDList>
+						</AudioFileSource>
+						<AudioFileSource Name="wowflower-brainmatter" ID="{E1B60B0A-638C-48C2-A20B-CE878ED93A6B}">
+							<Language>SFX</Language>
+							<AudioFile>wowflower-brainmatter.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="363603424"/>
+							</MediaIDList>
+						</AudioFileSource>
 					</ChildrenList>
 					<ObjectLists>
 						<ObjectList Name="RTPC">
@@ -625,41 +643,6 @@
 							</Reference>
 							<Reference>
 								<Local>
-									<RTPC Name="" ID="{4B8C452B-2A9F-4390-B36C-24BBB242C81D}" ShortID="515302682">
-										<PropertyList>
-											<Property Name="PropertyName" Type="string" Value="Highpass"/>
-										</PropertyList>
-										<ReferenceList>
-											<Reference Name="ControlInput">
-												<ObjectRef Name="handmenu_open" ID="{2F2EFD07-6E2E-48E3-9537-DCD6846A80D2}" WorkUnitID="{61452B44-EB00-4689-A695-CBFED9B90F32}"/>
-											</Reference>
-											<Reference Name="Curve">
-												<Custom>
-													<Curve Name="" ID="{627E9870-7A05-4B00-BDBB-13B8730A9A49}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="65537"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>55</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>0</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</Custom>
-											</Reference>
-										</ReferenceList>
-									</RTPC>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
 									<RTPC Name="" ID="{360E9033-3CE1-42E2-8219-6863CC674D95}" ShortID="314190647">
 										<PropertyList>
 											<Property Name="PropertyName" Type="string" Value="Volume"/>
@@ -701,7 +684,7 @@
 										</PropertyList>
 										<ReferenceList>
 											<Reference Name="ControlInput">
-												<ObjectRef Name="handmenu_open" ID="{2F2EFD07-6E2E-48E3-9537-DCD6846A80D2}" WorkUnitID="{61452B44-EB00-4689-A695-CBFED9B90F32}"/>
+												<ObjectRef Name="handmenu_close" ID="{8DE3B35E-E51F-405C-AD3D-D1883CC232B1}" WorkUnitID="{61452B44-EB00-4689-A695-CBFED9B90F32}"/>
 											</Reference>
 											<Reference Name="Curve">
 												<Custom>
@@ -716,9 +699,194 @@
 																<Flags>5</Flags>
 															</Point>
 															<Point>
-																<XPos>48.97314</XPos>
-																<YPos>-2800</YPos>
+																<XPos>49.95386</XPos>
+																<YPos>-1767</YPos>
 																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{2149E324-AC4A-439A-9035-961FEC600F18}" ShortID="1067603260">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Highpass"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="handmenu_open" ID="{2F2EFD07-6E2E-48E3-9537-DCD6846A80D2}" WorkUnitID="{61452B44-EB00-4689-A695-CBFED9B90F32}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{E2C14028-398B-48BF-8A88-2416C3D73691}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>55</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{05E71865-8539-4C36-B0B6-9155C3D50FF7}" ShortID="321331563">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Volume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="pausing" ID="{9C5D6484-2FB9-4F6F-96CF-DC1E62F280FA}" WorkUnitID="{61452B44-EB00-4689-A695-CBFED9B90F32}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{1A00B277-6A47-40A6-9F52-AE94042941D5}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-0.0599</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{B91E0C84-8DD9-4031-8EC2-D144ABABD113}" ShortID="983763093">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Pitch"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="pausing" ID="{9C5D6484-2FB9-4F6F-96CF-DC1E62F280FA}" WorkUnitID="{61452B44-EB00-4689-A695-CBFED9B90F32}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{3E43F3DA-2E71-4914-95BF-713FF1F2BB1B}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-4800</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>14.8223350253807</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>39.5939</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{EE5E942F-B8E7-4709-8E81-DB923763BE09}" ShortID="250020918">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="pausing" ID="{9C5D6484-2FB9-4F6F-96CF-DC1E62F280FA}" WorkUnitID="{61452B44-EB00-4689-A695-CBFED9B90F32}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{7E554E08-659B-4CBC-98EB-6706A0BED4D2}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>5</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{2E95BEB7-FDAA-4AF5-A2C0-E594F8DA101E}" ShortID="535017622">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Highpass"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="pausing" ID="{9C5D6484-2FB9-4F6F-96CF-DC1E62F280FA}" WorkUnitID="{61452B44-EB00-4689-A695-CBFED9B90F32}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{1DDACCA8-8830-4527-9897-960B56963AFE}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>2</YPos>
+																<Flags>5</Flags>
 															</Point>
 															<Point>
 																<XPos>100</XPos>

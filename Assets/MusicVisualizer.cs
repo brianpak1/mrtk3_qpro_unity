@@ -13,6 +13,7 @@ public class MusicVisualizer : MonoBehaviour
         baseScale = transform.localScale.x;
         // Mute or unmute the Unity audio source based on the initial state of the visualization
         unityAudioSource.volume = isMuted ? 0f : unityAudioSource.volume * volumeRatio;
+
     }
 
     void Update()
