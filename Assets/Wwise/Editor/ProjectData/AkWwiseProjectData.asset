@@ -176,7 +176,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 442b456100eb8946a695cbfed9b90f32
     GuidInternal: 
-    m_lastTime: -8585156917432451958
+    m_lastTime: -8585155802001362121
     List:
     - name: handmenu_close
       guid: 5eb3e38d1fe55c40ad3dd1883cc232b1
@@ -220,9 +220,9 @@ MonoBehaviour:
         ObjectType: 13
         guid: 6049efe30d083f44b6b9fa5c7f16476b
       Path: Game Parameters\Default Work Unit\MasterVolume
-    - name: pausing
+    - name: pause_resume
       guid: 84645d9cb92f6f4f96cfdc1e62f280fa
-      id: 3856304344
+      id: 3419004417
       PathAndIcons:
       - ElementName: Game Parameters
         ObjectType: 5
@@ -230,10 +230,10 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 442b456100eb8946a695cbfed9b90f32
-      - ElementName: pausing
+      - ElementName: pause_resume
         ObjectType: 13
         guid: 84645d9cb92f6f4f96cfdc1e62f280fa
-      Path: Game Parameters\Default Work Unit\pausing
+      Path: Game Parameters\Default Work Unit\pause_resume
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -277,7 +277,7 @@ MonoBehaviour:
     m_lastTime: -8585163456962887280
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000000f000000100000001500000016000000
+  ExpandedWaapiItemIds: 010000000500000006000000070000000f000000100000001500000016000000
   AutoSyncSelection: 1
   autoPopulateEnabled: 1
   currentDataSource: 0

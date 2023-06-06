@@ -13,22 +13,22 @@ public class SnapHandMenuRotationXR : MonoBehaviour
 
     private void OnEnable()
     {
-        interactable.onSelectEntered.AddListener(OnSelectEntered);
-        interactable.onSelectExited.AddListener(OnSelectExited);
+        interactable.selectEntered.AddListener(OnSelectEntered);
+        interactable.selectExited.AddListener(OnSelectExited);
     }
 
     private void OnDisable()
     {
-        interactable.onSelectEntered.RemoveListener(OnSelectEntered);
-        interactable.onSelectExited.RemoveListener(OnSelectExited);
+        interactable.selectEntered.RemoveListener(OnSelectEntered);
+        interactable.selectExited.RemoveListener(OnSelectExited);
     }
 
-    private void OnSelectEntered(XRBaseInteractor interactor)
+    private void OnSelectEntered(SelectEnterEventArgs args)
     {
         isDragging = true;
     }
 
-    private void OnSelectExited(XRBaseInteractor interactor)
+    private void OnSelectExited(SelectExitEventArgs args)
     {
         isDragging = false;
     }

@@ -630,7 +630,7 @@
 															</Point>
 															<Point>
 																<XPos>100</XPos>
-																<YPos>-29.686</YPos>
+																<YPos>-200</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -759,7 +759,7 @@
 										</PropertyList>
 										<ReferenceList>
 											<Reference Name="ControlInput">
-												<ObjectRef Name="pausing" ID="{9C5D6484-2FB9-4F6F-96CF-DC1E62F280FA}" WorkUnitID="{61452B44-EB00-4689-A695-CBFED9B90F32}"/>
+												<ObjectRef Name="pause_resume" ID="{9C5D6484-2FB9-4F6F-96CF-DC1E62F280FA}" WorkUnitID="{61452B44-EB00-4689-A695-CBFED9B90F32}"/>
 											</Reference>
 											<Reference Name="Curve">
 												<Custom>
@@ -794,7 +794,7 @@
 										</PropertyList>
 										<ReferenceList>
 											<Reference Name="ControlInput">
-												<ObjectRef Name="pausing" ID="{9C5D6484-2FB9-4F6F-96CF-DC1E62F280FA}" WorkUnitID="{61452B44-EB00-4689-A695-CBFED9B90F32}"/>
+												<ObjectRef Name="pause_resume" ID="{9C5D6484-2FB9-4F6F-96CF-DC1E62F280FA}" WorkUnitID="{61452B44-EB00-4689-A695-CBFED9B90F32}"/>
 											</Reference>
 											<Reference Name="Curve">
 												<Custom>
@@ -839,7 +839,7 @@
 										</PropertyList>
 										<ReferenceList>
 											<Reference Name="ControlInput">
-												<ObjectRef Name="pausing" ID="{9C5D6484-2FB9-4F6F-96CF-DC1E62F280FA}" WorkUnitID="{61452B44-EB00-4689-A695-CBFED9B90F32}"/>
+												<ObjectRef Name="pause_resume" ID="{9C5D6484-2FB9-4F6F-96CF-DC1E62F280FA}" WorkUnitID="{61452B44-EB00-4689-A695-CBFED9B90F32}"/>
 											</Reference>
 											<Reference Name="Curve">
 												<Custom>
@@ -874,7 +874,7 @@
 										</PropertyList>
 										<ReferenceList>
 											<Reference Name="ControlInput">
-												<ObjectRef Name="pausing" ID="{9C5D6484-2FB9-4F6F-96CF-DC1E62F280FA}" WorkUnitID="{61452B44-EB00-4689-A695-CBFED9B90F32}"/>
+												<ObjectRef Name="pause_resume" ID="{9C5D6484-2FB9-4F6F-96CF-DC1E62F280FA}" WorkUnitID="{61452B44-EB00-4689-A695-CBFED9B90F32}"/>
 											</Reference>
 											<Reference Name="Curve">
 												<Custom>

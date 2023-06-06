@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class MusicVisualizer : MonoBehaviour
@@ -6,20 +8,41 @@ public class MusicVisualizer : MonoBehaviour
     public float volumeRatio = 0.1f; // Adjust this value to control the volume ratio
     public float scaleFactor = 0.01f;
     private float baseScale;
-    private bool isMuted = false; // Flag for muting the visualization
+    private bool isPaused = false; // Flag for muting the visualization
+
+    // Add this variable to control the start time offset from the inspector
+    public float startTimeOffset = 0f;
+
+    // Static list to hold all active instances of MusicVisualizer
+    public static List<MusicVisualizer> AllInstances = new List<MusicVisualizer>();
+
+    void Awake()
+    {
+        // Add this instance to the list when it's created
+        AllInstances.Add(this);
+    }
+
+    void OnDestroy()
+    {
+        // Remove this instance from the list when it's destroyed
+        AllInstances.Remove(this);
+    }
 
     void Start()
     {
         baseScale = transform.localScale.x;
         // Mute or unmute the Unity audio source based on the initial state of the visualization
-        unityAudioSource.volume = isMuted ? 0f : unityAudioSource.volume * volumeRatio;
+        unityAudioSource.volume = isPaused ? 0f : unityAudioSource.volume * volumeRatio;
 
+        // Set the start time offset and start the audio
+        unityAudioSource.time = startTimeOffset;
+        unityAudioSource.Play();
     }
 
     void Update()
     {
         // Get the audio spectrum data from Unity audio if not muted
-        if (!isMuted)
+        if (!isPaused)
         {
             float[] spectrumData = new float[256];
             unityAudioSource.GetSpectrumData(spectrumData, 0, FFTWindow.Triangle);
@@ -38,9 +61,17 @@ public class MusicVisualizer : MonoBehaviour
         }
     }
 
-    public void SetMute(bool mute)
+    public void TogglePauseResume()
     {
-        isMuted = mute;
-        unityAudioSource.volume = isMuted ? 0f : unityAudioSource.volume * volumeRatio;
+        isPaused = !isPaused;
+
+        if (isPaused)
+        {
+            unityAudioSource.Pause();
+        }
+        else
+        {
+            unityAudioSource.Play();
+        }
     }
 }
