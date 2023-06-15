@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: b2fc02dad5af1e469dd7dd48bde058ba
     GuidInternal: 
-    m_lastTime: -8585157683630347993
+    m_lastTime: -8585148922497405281
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 8ccc52afde038c4899e0cb67232665b1
     GuidInternal: 
-    m_lastTime: -8585156879871191970
+    m_lastTime: -8585148922490030917
     List:
     - name: soundbank_1
       guid: b60b86141aa2bd4c8b25bc012e05b42c
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 24d7c3cebe91444b8087ea54d41aa7ab
     GuidInternal: 
-    m_lastTime: -8585156929453477756
+    m_lastTime: -8585148922497425232
     List:
     - name: event_playbeat
       guid: f33ea0a7b037bd4e95d05b3b8890aeef
@@ -176,7 +176,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 442b456100eb8946a695cbfed9b90f32
     GuidInternal: 
-    m_lastTime: -8585155802001362121
+    m_lastTime: -8585148922497415167
     List:
     - name: handmenu_close
       guid: 5eb3e38d1fe55c40ad3dd1883cc232b1
@@ -277,8 +277,8 @@ MonoBehaviour:
     m_lastTime: -8585163456962887280
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000500000006000000070000000f000000100000001500000016000000
-  AutoSyncSelection: 1
+  ExpandedWaapiItemIds: 
+  AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
   CurrentPluginConfig: 

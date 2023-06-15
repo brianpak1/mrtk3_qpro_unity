@@ -37,6 +37,7 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Meta_WitAi_Lib_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Meta_WitAi_TTS_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Meta_WitAi_TTS_Samples_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Microsoft_MixedReality_GraphicsTools_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Microsoft_MixedReality_GraphicsTools_Samples_MaterialGallery_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Microsoft_MixedReality_OpenXR_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Microsoft_MixedReality_Toolkit_Accessibility_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Microsoft_MixedReality_Toolkit_Audio_CodeGenModule;
@@ -58,6 +59,8 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Oculus_Platform_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Oculus_Spatializer_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Oculus_VR_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Oculus_Voice_Demo_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_ShapesRuntime_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_ShapesSamples_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_Configuration_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_Core_CodeGenModule;
@@ -134,7 +137,7 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_VoiceSDK_Runtime_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g___Generated_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_mscorlib_CodeGenModule;
 IL2CPP_EXTERN_C const Il2CppCodeGenModule* g_CodeGenModules[];
-const Il2CppCodeGenModule* g_CodeGenModules[113] = 
+const Il2CppCodeGenModule* g_CodeGenModules[116] = 
 {
 	(&g_AK_Wwise_Unity_API_CodeGenModule),
 	(&g_AK_Wwise_Unity_API_WwiseTypes_CodeGenModule),
@@ -153,6 +156,7 @@ const Il2CppCodeGenModule* g_CodeGenModules[113] =
 	(&g_Meta_WitAi_TTS_CodeGenModule),
 	(&g_Meta_WitAi_TTS_Samples_CodeGenModule),
 	(&g_Microsoft_MixedReality_GraphicsTools_CodeGenModule),
+	(&g_Microsoft_MixedReality_GraphicsTools_Samples_MaterialGallery_CodeGenModule),
 	(&g_Microsoft_MixedReality_OpenXR_CodeGenModule),
 	(&g_Microsoft_MixedReality_Toolkit_Accessibility_CodeGenModule),
 	(&g_Microsoft_MixedReality_Toolkit_Audio_CodeGenModule),
@@ -174,6 +178,8 @@ const Il2CppCodeGenModule* g_CodeGenModules[113] =
 	(&g_Oculus_Spatializer_CodeGenModule),
 	(&g_Oculus_VR_CodeGenModule),
 	(&g_Oculus_Voice_Demo_CodeGenModule),
+	(&g_ShapesRuntime_CodeGenModule),
+	(&g_ShapesSamples_CodeGenModule),
 	(&g_System_CodeGenModule),
 	(&g_System_Configuration_CodeGenModule),
 	(&g_System_Core_CodeGenModule),
@@ -255,20 +261,20 @@ const Il2CppCodeRegistration g_CodeRegistration =
 {
 	29,
 	g_ReversePInvokeWrapperPointers,
-	99949,
+	101381,
 	g_Il2CppGenericMethodPointers,
 	g_Il2CppGenericAdjustorThunks,
-	22941,
+	24150,
 	g_Il2CppInvokerPointers,
-	4080,
+	4139,
 	g_UnresolvedVirtualMethodPointers,
 	g_UnresolvedInstanceMethodPointers,
 	g_UnresolvedStaticMethodPointers,
-	1412,
+	1424,
 	g_Il2CppInteropData,
 	0,
 	NULL,
-	113,
+	116,
 	g_CodeGenModules,
 };
 IL2CPP_EXTERN_C_CONST Il2CppMetadataRegistration g_MetadataRegistration;
