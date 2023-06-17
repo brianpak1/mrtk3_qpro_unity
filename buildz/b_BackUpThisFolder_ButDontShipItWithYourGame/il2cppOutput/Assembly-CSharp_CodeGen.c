@@ -75,6 +75,10 @@ extern void U3CStartU3Ed__4_System_Collections_IEnumerator_Reset_m3EF23BF40634D4
 extern void U3CStartU3Ed__4_System_Collections_IEnumerator_get_Current_mB1C119A46A09AD8F0D4DE964F6B335BE2A460FAA (void);
 extern void ToggleAllVisualizers_Toggle_mCC36EDE5FD57181B2B5A4F963A22E7F5BE20EE83 (void);
 extern void ToggleAllVisualizers__ctor_m4A9B373FF4576A7847AA27ECC30783432058B057 (void);
+extern void ToggleMenuAction_Execute_m3CC0D50B0C6478E03BE7709D32B81123EF076811 (void);
+extern void ToggleMenuAction_OpenMenu_m5A82DC897D933AC39279E7BD70B02E55EBB0C74F (void);
+extern void ToggleMenuAction_CloseMenu_m0B80D548E7E639132190426206E44F3CF2511330 (void);
+extern void ToggleMenuAction__ctor_m4829D3309CD526BC8D9401A058AA6FDB519EF01A (void);
 extern void WwiseVolumeControl_Start_m6E39FA478DCC041A7C73DB6134AA61092AEA2E3B (void);
 extern void WwiseVolumeControl_UpdateMasterVolume_m65B9877F7278A86ECDDEF81A7331829F1A6F1484 (void);
 extern void WwiseVolumeControl__ctor_m15D2EB34A51688377BE9CCE5AA63B10B6444BDA0 (void);
@@ -461,7 +465,7 @@ extern void Whiteboard_ProcessInteractable_mCE154C10D505C5B2EA3BB63B31894DAC9C87
 extern void Whiteboard_OnSelectExited_mED1CFFAC6943804A35FAD8158469A677BAE01580 (void);
 extern void Whiteboard_DrawSplat_m2D682A51146F1C1F4B0F7ABB535AF612DBF2A582 (void);
 extern void Whiteboard__ctor_m615F1B105CE0DA000573B7CDF7633FC25B652174 (void);
-static Il2CppMethodPointer s_methodPointers[450] = 
+static Il2CppMethodPointer s_methodPointers[454] = 
 {
 	HandMenuSwitcher_Start_m10552C2A4865409C7693550A49F7CE7209F549F7,
 	HandMenuSwitcher_SwitchHandMenu_m368E15B6B83FDC6CCABFD7CAD120AA98D51FD3A7,
@@ -527,6 +531,10 @@ static Il2CppMethodPointer s_methodPointers[450] =
 	U3CStartU3Ed__4_System_Collections_IEnumerator_get_Current_mB1C119A46A09AD8F0D4DE964F6B335BE2A460FAA,
 	ToggleAllVisualizers_Toggle_mCC36EDE5FD57181B2B5A4F963A22E7F5BE20EE83,
 	ToggleAllVisualizers__ctor_m4A9B373FF4576A7847AA27ECC30783432058B057,
+	ToggleMenuAction_Execute_m3CC0D50B0C6478E03BE7709D32B81123EF076811,
+	ToggleMenuAction_OpenMenu_m5A82DC897D933AC39279E7BD70B02E55EBB0C74F,
+	ToggleMenuAction_CloseMenu_m0B80D548E7E639132190426206E44F3CF2511330,
+	ToggleMenuAction__ctor_m4829D3309CD526BC8D9401A058AA6FDB519EF01A,
 	WwiseVolumeControl_Start_m6E39FA478DCC041A7C73DB6134AA61092AEA2E3B,
 	WwiseVolumeControl_UpdateMasterVolume_m65B9877F7278A86ECDDEF81A7331829F1A6F1484,
 	WwiseVolumeControl__ctor_m15D2EB34A51688377BE9CCE5AA63B10B6444BDA0,
@@ -914,7 +922,7 @@ static Il2CppMethodPointer s_methodPointers[450] =
 	Whiteboard_DrawSplat_m2D682A51146F1C1F4B0F7ABB535AF612DBF2A582,
 	Whiteboard__ctor_m615F1B105CE0DA000573B7CDF7633FC25B652174,
 };
-static const int32_t s_InvokerIndices[450] = 
+static const int32_t s_InvokerIndices[454] = 
 {
 	13938,
 	13938,
@@ -978,6 +986,10 @@ static const int32_t s_InvokerIndices[450] =
 	13748,
 	13938,
 	13748,
+	13938,
+	13938,
+	13938,
+	13938,
 	13938,
 	13938,
 	13938,
@@ -1371,7 +1383,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	450,
+	454,
 	s_methodPointers,
 	0,
 	NULL,
