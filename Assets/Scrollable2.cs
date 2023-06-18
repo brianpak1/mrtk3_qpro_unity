@@ -35,11 +35,11 @@ namespace Microsoft.MixedReality.Toolkit.UX
         [SerializeField]
         private AudioSource audioSource = null;
 
-        [SerializeField]
-        private AudioClip interactionStartSound = null;
+        //[SerializeField]
+        //private AudioClip interactionStartSound = null;
 
-        [SerializeField]
-        private AudioClip interactionEndSound = null;
+        //[SerializeField]
+        //private AudioClip interactionEndSound = null;
 
         [SerializeField]
         private AudioClip tickSound = null;
@@ -56,11 +56,11 @@ namespace Microsoft.MixedReality.Toolkit.UX
         private float minSecondsBetweenTicks = 0.1f;
 
         [Header("Scroll Menu")]
-        [SerializeField]
-        private GameObject startPrefab = null;
+        //[SerializeField]
+        //private GameObject startPrefab = null;
 
-        [SerializeField]
-        private GameObject endPrefab = null;
+        //[SerializeField]
+        //private GameObject endPrefab = null;
 
         private Dictionary<IXRInteractor, Vector2> touchPoints = new Dictionary<IXRInteractor, Vector2>();
 

@@ -2,10 +2,11 @@ using UnityEngine;
 
 public class ToggleMenuAction : BaseButtonAction
 {
-    public GameObject menuPrefab;
+    public GameObject menuObject; // This should be the actual GameObject, not a prefab
     public Transform spawnTransform;
+    public Vector3 spawnOffset;
 
-    private GameObject spawnedMenu;
+    private GameObject currentMenuObject;
     private bool isMenuOpen;
 
     public override void Execute()
@@ -22,16 +23,18 @@ public class ToggleMenuAction : BaseButtonAction
 
     private void OpenMenu()
     {
-        if (menuPrefab != null && spawnTransform != null)
+        if (menuObject != null && spawnTransform != null)
         {
-            if (spawnedMenu == null)
+            if (currentMenuObject == null)
             {
-                spawnedMenu = Instantiate(menuPrefab, spawnTransform.position, Quaternion.identity);
-                spawnedMenu.transform.SetParent(spawnTransform);
+                Vector3 spawnPosition = spawnTransform.position + spawnOffset;
+                menuObject.transform.position = spawnPosition;
+                menuObject.transform.SetParent(spawnTransform);
+                currentMenuObject = menuObject;
             }
             else
             {
-                spawnedMenu.SetActive(true);
+                currentMenuObject.SetActive(true);
             }
 
             isMenuOpen = true;
@@ -40,9 +43,9 @@ public class ToggleMenuAction : BaseButtonAction
 
     private void CloseMenu()
     {
-        if (spawnedMenu != null)
+        if (currentMenuObject != null)
         {
-            spawnedMenu.SetActive(false);
+            currentMenuObject.SetActive(false);
             isMenuOpen = false;
         }
     }

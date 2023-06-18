@@ -12,6 +12,9 @@
 
 
 
+extern void DetectObjectInSocket_OnTriggerEnter_m735BB6D2D615A9F7BE113CCE3F4DC3EF816A9F58 (void);
+extern void DetectObjectInSocket_OnTriggerExit_m2C16B79C1324F13FFE56F9C0590122AD8745EDE5 (void);
+extern void DetectObjectInSocket__ctor_m33B3B7B1B6691BDFB274681FD7B925E9E364AE00 (void);
 extern void HandMenuSwitcher_Start_m10552C2A4865409C7693550A49F7CE7209F549F7 (void);
 extern void HandMenuSwitcher_SwitchHandMenu_m368E15B6B83FDC6CCABFD7CAD120AA98D51FD3A7 (void);
 extern void HandMenuSwitcher__ctor_m14A6A765113D7CF0A6A61F7275468EE92EADE5D9 (void);
@@ -465,8 +468,11 @@ extern void Whiteboard_ProcessInteractable_mCE154C10D505C5B2EA3BB63B31894DAC9C87
 extern void Whiteboard_OnSelectExited_mED1CFFAC6943804A35FAD8158469A677BAE01580 (void);
 extern void Whiteboard_DrawSplat_m2D682A51146F1C1F4B0F7ABB535AF612DBF2A582 (void);
 extern void Whiteboard__ctor_m615F1B105CE0DA000573B7CDF7633FC25B652174 (void);
-static Il2CppMethodPointer s_methodPointers[454] = 
+static Il2CppMethodPointer s_methodPointers[457] = 
 {
+	DetectObjectInSocket_OnTriggerEnter_m735BB6D2D615A9F7BE113CCE3F4DC3EF816A9F58,
+	DetectObjectInSocket_OnTriggerExit_m2C16B79C1324F13FFE56F9C0590122AD8745EDE5,
+	DetectObjectInSocket__ctor_m33B3B7B1B6691BDFB274681FD7B925E9E364AE00,
 	HandMenuSwitcher_Start_m10552C2A4865409C7693550A49F7CE7209F549F7,
 	HandMenuSwitcher_SwitchHandMenu_m368E15B6B83FDC6CCABFD7CAD120AA98D51FD3A7,
 	HandMenuSwitcher__ctor_m14A6A765113D7CF0A6A61F7275468EE92EADE5D9,
@@ -922,8 +928,11 @@ static Il2CppMethodPointer s_methodPointers[454] =
 	Whiteboard_DrawSplat_m2D682A51146F1C1F4B0F7ABB535AF612DBF2A582,
 	Whiteboard__ctor_m615F1B105CE0DA000573B7CDF7633FC25B652174,
 };
-static const int32_t s_InvokerIndices[454] = 
+static const int32_t s_InvokerIndices[457] = 
 {
+	10851,
+	10851,
+	13938,
 	13938,
 	13938,
 	13938,
@@ -1383,7 +1392,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	454,
+	457,
 	s_methodPointers,
 	0,
 	NULL,
