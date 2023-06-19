@@ -1,15 +1,15 @@
 using UnityEngine;
 
-public class ToggleMenuAction : BaseButtonAction
+public class ToggleMenuAction : MonoBehaviour
 {
-    public GameObject menuObject; // This should be the actual GameObject, not a prefab
+    public GameObject menuObject;
     public Transform spawnTransform;
     public Vector3 spawnOffset;
 
     private GameObject currentMenuObject;
     private bool isMenuOpen;
 
-    public override void Execute()
+    public void Execute()
     {
         if (isMenuOpen)
         {
@@ -27,8 +27,8 @@ public class ToggleMenuAction : BaseButtonAction
         {
             if (currentMenuObject == null)
             {
-                Vector3 spawnPosition = spawnTransform.position + spawnOffset;
-                menuObject.transform.position = spawnPosition;
+                menuObject.transform.position = spawnTransform.position + spawnOffset;
+                menuObject.transform.rotation = spawnTransform.rotation;
                 menuObject.transform.SetParent(spawnTransform);
                 currentMenuObject = menuObject;
             }
